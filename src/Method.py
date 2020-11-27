@@ -7,5 +7,6 @@ def sparePart():
     a = x + y
     return a
 
-print (printHelloWorld()) 
-print ('test', sparePart())
+print ('test printHelloWorld method-->', printHelloWorld()) 
+
+print ('test sparePart method-->', sparePart())
