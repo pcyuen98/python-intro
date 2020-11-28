@@ -21,16 +21,16 @@ print ('five -->',five);
 six = [1, 2, 4, 8]
 print ('six -->',six);
 
-#sixFirstValue = six[0] = 999
-#print ('sixFirstValue -->',sixFirstValue); 
-#print ('six after changed -->',six); 
+sixFirstValue = six[0] = 999
+print ('sixFirstValue -->',sixFirstValue); 
+print ('six after changed -->',six); 
 
 # tuples 
 seven = ("a", "e", "i", "o", "u")
 print ('seven -->',seven);
 
 # Tuple - Cannot Change!, if can then US President now is Trump on Nov 2020
-#sevenFirstValue = seven[0] = "AAA" 
+# sevenFirstValue = seven[0] = "AAA" 
 #print ('sevenFirstValue -->',sevenFirstValue); 
 #print ('six after changed -->',six); 
 
