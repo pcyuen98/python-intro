@@ -3,6 +3,9 @@
 
 # number datatype
 
+# More example
+# https://www.w3schools.com/python/python_datatypes.asp
+
 one = 1   # integer
 print ('one -->',one)
 
