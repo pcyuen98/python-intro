@@ -13,7 +13,7 @@ https://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it
 # More example on HTML
 https://www.w3schools.com/whatis/whatis_html.asp
 
-# Import Elements of HTML 
+# Important Elements of HTML 
 https://www.w3schools.com/html/default.asp
 
 HTML HOME
