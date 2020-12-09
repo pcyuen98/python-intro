@@ -42,6 +42,7 @@ class HandleJSON(object):
         global LAST_JSON_DOC
         json_data = web.data()
         LAST_JSON_DOC = json.loads(json_data)
+        print ('data received ====' , LAST_JSON_DOC)
         return LAST_JSON_DOC
 
 
