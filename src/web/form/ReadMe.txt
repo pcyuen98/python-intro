@@ -1,6 +1,7 @@
 # a simple form submission and Javascript
 
-1. Start FormWeb.py as server, ensure no other server running
+1. Copy these 2 files to your eclipse as the directory format
+2. Go to Eclipse, open the FormWeb.py file then run it, ensure no other server running
 2. Open FormInput.html location on windows explorer, then run from Chrome
 3. Key in firstname and last name then click submit on chrome
 4. Check your submitted data on http://localhost:8080/
