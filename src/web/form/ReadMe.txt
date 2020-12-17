@@ -16,5 +16,6 @@ Reference
 
 JavaScript - https://www.w3schools.com/js/default.asp
 HTML Forms - https://www.w3schools.com/html/html_forms.asp
+Emoji - https://www.w3schools.com/charsets/ref_emoji.asp
 ReadMe.txt on https://github.com/pcyuen98/python-intro/tree/main/src/json
  
