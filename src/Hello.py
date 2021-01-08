@@ -7,5 +7,5 @@
 
 # 28 November. 3pm Class - Day 1 - We can use compiler to compile into PYC file that able to execute faster
 
-print ("Hello, World! 2")
+print ("Hello, World!")
 
