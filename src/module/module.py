@@ -7,6 +7,6 @@ This is a practice using of modules
 it will call another module name call greeting() from mymodule.py
 
 """
-import mymodule
+from module import mymodule
 
-mymodule.greeting("Jun Yee")
+mymodule.greeting("Hi There")
