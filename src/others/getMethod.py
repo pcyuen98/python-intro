@@ -1,7 +1,7 @@
 # GetMethod.py
 
 def printHelloWorld():
-    print("Hello World") 
+    print("hello World") 
 
 def spartPart():
     x = 1
