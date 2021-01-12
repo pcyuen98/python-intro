@@ -7,7 +7,7 @@ urls = (
 
 class index1:
     def GET(self):
-        from json import jsonData                  # import something from GetMethod py File
+        from json_sample import jsonData                  # import something from GetMethod py File
         #return "hello Chrome 123!"        # return simple message
         return jsonData.loadJson()
 
