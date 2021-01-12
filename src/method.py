@@ -1,5 +1,5 @@
 def printHelloWorld(): 
-    return "Hello World"
+    return "hello World"
 
 def sparePart():
     x = 1
