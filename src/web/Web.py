@@ -7,9 +7,9 @@ urls = (
 
 class index1:
     def GET(self):
-        import GetWebMethod                  # import something from GetMethod py File
-        #return "Hello Chrome 123!"        # return simple message
-        return GetWebMethod.sparePart()   # return GetMethod PY file and Spare Part Method 
+        from web import getWebMethod                  # import something from GetMethod py File
+        #return "hello Chrome 123!"        # return simple message
+        return getWebMethod.sparePart()   # return GetMethod PY file and Spare Part method 
 
 if __name__ == "__main__":                     # Standard Web Starter Instruction
     app = web.application(urls, globals())     # Mapping to line 4 'urls' variable to tell Python 
