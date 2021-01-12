@@ -7,8 +7,8 @@ urls = (
 
 class index1:
     def GET(self):
-        import jsonData                  # import something from GetMethod py File
-        #return "Hello Chrome 123!"        # return simple message
+        from json import jsonData                  # import something from GetMethod py File
+        #return "hello Chrome 123!"        # return simple message
         return jsonData.loadJson()
 
 if __name__ == "__main__":                     # Standard Web Starter Instruction

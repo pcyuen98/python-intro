@@ -1,3 +1,3 @@
 import PySimpleGUI as sg
 
-sg.Window(title="Hello World", layout=[[]], margins=(200, 50)).read()
+sg.Window(title="hello World", layout=[[]], margins=(200, 50)).read()
