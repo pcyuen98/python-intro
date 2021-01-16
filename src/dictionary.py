@@ -1,6 +1,7 @@
+# More samples - https://www.w3schools.com/python/python_dictionaries.asp
 
 # dictionary
-dictionary = {1: 'one', 2: 'two', 3: 'Three'}
+dictionary = {1: '480', 2: '480', 3: '400'}
 
 print ('dictionary -->', dictionary)
 

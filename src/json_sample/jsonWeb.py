@@ -1,5 +1,6 @@
 import web
 
+
 urls = (
      '/', 'index1'    # the index1 is mapping to the class name below on line 4
 

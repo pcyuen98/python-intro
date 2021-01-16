@@ -1,3 +1,5 @@
+# More samples - https://www.w3schools.com/python/python_conditions.asp
+
 a = 1000
 b = 200
 
