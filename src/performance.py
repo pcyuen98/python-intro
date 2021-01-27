@@ -1,11 +1,13 @@
+# update on 27 Jan 2021
+
 import datetime;
 
 mylist = []
 
 before = datetime.datetime.now()
 
-for _ in range(100000000):
-    mylist.append(datetime.datetime.now())
+for _ in range(10000000):
+    mylist.append("datetime.datetime.now()")
 
 print("List length-->" , len(mylist))     
    
