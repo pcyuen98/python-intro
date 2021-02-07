@@ -10,7 +10,7 @@ for key in dictionaryValue :
     print('loop  key--->', key, '  value--->',  dictionaryValue[key])
 
 for key in dictionaryValue :
-    if key == 'one': print ('the key is one'  )
+    if key == 'one': print ('you are my lover'  )
     
 for key in dictionaryValue :
     if dictionaryValue[key] == '11': print ('the value is 11'  ) 
