@@ -7,8 +7,23 @@ def sparePart():
     x = 1
     y = 1
     a = x + y
-    return a
+    c = a-x-y
+    return c+a
+
+def name():
+    name = input("Enter name: ")
+    return name
+
 
 print ('test printHelloWorld method-->', printHelloWorld()) 
 
 print ('test sparePart method-->', sparePart())
+
+print(' name >', name())
+
+
+class method(object):
+    pass
+
+
+
