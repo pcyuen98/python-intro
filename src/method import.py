@@ -1,0 +1,4 @@
+class sparePart(object):
+    pass
+
+
