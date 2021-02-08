@@ -1,5 +1,4 @@
-
-class method_class:
+class MethodClass:
     
     @classmethod
     def sparePart(self):
@@ -13,5 +12,8 @@ class method_class:
     def printHelloWorld(self):  
         return "hello World from class"
 
+    def noSelf():  # @NoSelf
+        return "This is No Self"
 
-
+    def noSelfWithParam(param):  # @NoSelf
+        return "This is No Self with Param," + param
