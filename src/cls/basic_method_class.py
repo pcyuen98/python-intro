@@ -1,5 +1,7 @@
 class MethodClass:
     
+    anIntTest = 0; 
+    
     @classmethod
     def sparePart(self):
         x = 1
@@ -17,3 +19,6 @@ class MethodClass:
 
     def noSelfWithParam(param):  # @NoSelf
         return "This is No Self with Param," + param
+    
+    def getAnIntTest(self): 
+        return self.anIntTest
