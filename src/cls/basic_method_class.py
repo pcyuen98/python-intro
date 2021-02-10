@@ -18,7 +18,7 @@ class MethodClass:
         return "This is No Self"
 
     def noSelfWithParam(param):  # @NoSelf
-        return "This is No Self with Param," + param
+        return "This is No Self with Parameter ===>" + param
     
     def getAnIntTest(self): 
         return self.anIntTest
