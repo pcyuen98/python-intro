@@ -8,6 +8,7 @@ class MethodClass:
         y = 1
         z = 1
         a = x + y + z
+
         return a;
          
     @classmethod    
