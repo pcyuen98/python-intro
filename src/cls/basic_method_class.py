@@ -3,7 +3,7 @@
 class MethodClass:
     
     anIntTest = 0; 
-
+    
     def sparePart(self):
         x = 1
         y = 1
@@ -24,6 +24,11 @@ class MethodClass:
     def getAnIntTest(self): 
         return self.anIntTest
 
+# https://www.programiz.com/python-programming/methods/built-in/classmethod
     @classmethod  
     def getAnIntTestWithClassMethod(self): 
         return self.anIntTest
+    
+    @staticmethod  
+    def getAnIntTestWithStaticMethod(num): 
+        return num + 1
