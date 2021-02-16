@@ -11,14 +11,23 @@ class MethodClass:
         a = x + y + z
         print(self.anIntTest)
         return a;         
-  
+    
+    @staticmethod 
+    def sparePartStatic():
+        x = 1
+        y = 1
+        a = x + y
+        return a;       
+    
     def printHelloWorld(self):  
         return "hello World from class"
 
-    def noSelf():  # @NoSelf
+    @staticmethod  
+    def noSelf():
         return "This is No Self"
 
-    def noSelfWithParam(param):  # @NoSelf
+    @staticmethod  
+    def noSelfWithParam(param):
         return "This is No Self with Parameter ===>" + param
     
     def getAnIntTest(self): 

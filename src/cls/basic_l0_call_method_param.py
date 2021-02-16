@@ -1,5 +1,5 @@
 from cls.basic_method_class import MethodClass
 
-returnValue = MethodClass.sparePart();
+returnValue = MethodClass.sparePartStatic();
 
 print( MethodClass.noSelfWithParam( str(returnValue)) )
