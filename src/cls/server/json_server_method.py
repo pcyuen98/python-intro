@@ -7,7 +7,6 @@ class JSONServerClass:
     
     @staticmethod
     def getPerson():
-        global persons
         
         print ('persons--->' , JSONServerClass.persons) 
         return JSONServerClass.persons        
@@ -18,8 +17,6 @@ class JSONServerClass:
         import json
         person = json.loads(json_data)
         print ('data received ====' , person)        
-        
-        global persons
         
         # convert received person to local person Object
         personLocal = Person()
