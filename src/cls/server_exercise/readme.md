@@ -34,10 +34,12 @@ https://github.com/pcyuen98/python-intro/blob/main/src/cls/cls_object/car.py
 
 2. It should have 3 basic API function.
 a. Post an object
+
 b. Get all object in a list
+
 c. search the brand name
 
-Sample Object as below
+Sample Json Object as below
 
 {
    "brand":"Proton",
