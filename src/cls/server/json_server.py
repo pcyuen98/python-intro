@@ -4,6 +4,7 @@ URLS = (
     '/get', 'JsonGet',
     '/post', 'JsonPost',
     '/search', 'JsonSearch'
+    '/search/address', 'JsonSearchAddress'
 )
 
 
@@ -29,7 +30,15 @@ class JsonSearch(object):
         isPersonNameExist = JSONServerSearch.searchName(user_input)
         
         return isPersonNameExist
+
+class JsonSearchAddress(object):
     
+    def GET(self):
+        # Exercise: Complete the method below 
+        JSONServerSearch.searchAddress(None)
+        
+        return False
+        
 def main():
     """
     Main function starting app

@@ -14,3 +14,10 @@ class JSONServerSearch:
             if isMatch:
                 return True
         return False
+    
+    @staticmethod
+    def searchAddress(user_input):
+        # complete the method below
+        print('searching address for-->' , user_input.address)
+
+        return False
