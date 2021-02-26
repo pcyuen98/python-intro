@@ -17,7 +17,8 @@ class JsonSearchAddress(object):
         return False
 
 It should able to search partial key words, i.e if "Penang" existed in the json list, then it should return true
-http://localhost:8080/search?name=Kap
+
+http://localhost:8080/search/address?address=Penang
 
 Sample Json
 {
