@@ -8,7 +8,7 @@ class JSONServerClass:
     @staticmethod
     def getPerson():
         
-        print ('persons--->' , JSONServerClass.persons) 
+        #print ('returning persons--->' , JSONServerClass.persons) 
         return JSONServerClass.persons        
             
     @staticmethod
@@ -21,12 +21,12 @@ class JSONServerClass:
         # convert received person to local person Object
         personLocal = Person()
         personLocal.__dict__ = person
-        print ('received person--->' , person)
+        #print ('received person--->' , person)
                     
-        print ('personLocal Name--->' , personLocal.name)
-        print ('personLocal address--->' , personLocal.address)
+        #print ('personLocal Name--->' , personLocal.name)
+        #print ('personLocal address--->' , personLocal.address)
         
         JSONServerClass.persons.append(person)       
          
-        print ('after add persons--->' , JSONServerClass.persons)
+        #print ('after add persons--->' , JSONServerClass.persons)
         return JSONServerClass.persons
