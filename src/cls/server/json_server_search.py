@@ -17,7 +17,13 @@ class JSONServerSearch:
     
     @staticmethod
     def searchAddress(user_input):
-        # complete the method below
-        print('searching address for-->' , user_input.address)
-
+        print('searching for-->' , user_input.address)
+        #for person in JSONServerClass.getPerson():
+        #    personLocal = Person()
+        #    personLocal.__dict__ = person
+        #    print('personLocal address-->' , personLocal.address)
+        #    isMatch = personLocal.address == user_input.address
+        #    print('isMatch ? -->' , isMatch)
+        #    if isMatch:
+        #        return True
         return False
