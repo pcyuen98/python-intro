@@ -38,13 +38,11 @@ class JsonSearch(object):
 class JsonSearchAddress(object):
     
     def GET(self):
-        print('Search address..')
-        import web 
-        user_input = web.input()
-
-        isAddressExist = JSONServerSearch.searchAddress(user_input)
+        # Exercise: Complete the method below 
         
-        return isAddressExist
+        # JSONServerSearch.searchAddress(None)
+        
+        return False
 
 def main():
     """
