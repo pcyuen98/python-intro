@@ -1,10 +1,10 @@
 from cls.server.json_server_method import JSONServerClass
 from cls.server.json_server_search import JSONServerSearch
 URLS = (
-    '/get', 'JsonGet',
-    '/post', 'JsonPost',
-    '/search', 'JsonSearch',
-    '/search/address', 'JsonSearchAddress'
+    '/json/get', 'JsonGet',
+    '/json/post', 'JsonPost',
+    '/json/search', 'JsonSearch',
+    '/json/search/address', 'JsonSearchAddress'
 )
 
 
@@ -16,11 +16,15 @@ class JsonGet(object):
 class JsonPost(object):
 
     def POST(self):
+        
         import web
+
+        print('post started')
+
         json_data = web.data()
         
         return JSONServerClass.setPerson(json_data)
-
+        
 class JsonSearch(object):
     
     def GET(self):
@@ -45,6 +49,7 @@ def main():
     Main function starting app
     """
     import web 
+
     http_app = web.application(URLS, globals())
     http_app.run()
 
