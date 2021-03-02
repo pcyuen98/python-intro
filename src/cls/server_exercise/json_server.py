@@ -1,10 +1,10 @@
 from cls.server.json_server_method import JSONServerClass
 from cls.server.json_server_search import JSONServerSearch
 URLS = (
-    '/get', 'JsonGet',
-    '/post', 'JsonPost',
-    '/search', 'JsonSearch'
-    '/search/address', 'JsonSearchAddress'
+    '/car/get', 'JsonGet',
+    '/car/post', 'JsonPost',
+    '/car/search', 'JsonSearch'
+    '/car/search/address', 'JsonSearchAddress'
 )
 
 
