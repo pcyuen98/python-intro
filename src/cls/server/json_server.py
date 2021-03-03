@@ -38,9 +38,11 @@ class JsonSearch(object):
 class JsonSearchAddress(object):
     
     def GET(self):
+        import web
         # Exercise: Complete the method below 
-        
+        user_input = web.input()
         # JSONServerSearch.searchAddress(None)
+        isPersonAddressExist = JSONServerSearch.searchAddress(user_input)
         
         return False
 
