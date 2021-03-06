@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="/pic/Python-Programming-Examples.png">
+  <img width="760" height="500" src="/pic/Python-Programming-Examples.png">
 </p>
 
 # python-intro
