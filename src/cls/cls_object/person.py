@@ -1,4 +1,9 @@
-class Person:
+class Car:
     
-    name = 'A Name'
-    address = 'An Address'
+    brand = 'A Name'
+    model = 'An Address'
+
+class Person(object):
+    pass
+
+

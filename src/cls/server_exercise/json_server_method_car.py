@@ -1,15 +1,15 @@
 # more example - https://www.w3schools.com/python/python_classes.asp
-from cls.cls_object.person import Person
+from cls.cls_object.person import Car
 
-class JSONServerClass:
+class JSONServerCarClass:
     
-    persons = [];
+    cars = [];
     
     @staticmethod
-    def getPerson():
+    def getCar():
         
-        print ('persons--->' , JSONServerClass.persons) 
-        return JSONServerClass.persons        
+        print ('persons--->' , JSONServerCarClass.cars) 
+        return JSONServerCarClass.cars        
             
     @staticmethod
     def setPerson(json_data):
@@ -19,14 +19,14 @@ class JSONServerClass:
         print ('data received ====' , person)        
         
         # convert received person to local person Object
-        personLocal = Person()
+        personLocal = Car()
         personLocal.__dict__ = person
         print ('received person--->' , person)
                     
-        print ('personLocal Name--->' , personLocal.name)
-        print ('personLocal address--->' , personLocal.address)
+        print ('personLocal Name--->' , personLocal.brand)
+        print ('personLocal address--->' , personLocal.model)
         
-        JSONServerClass.persons.append(person)       
+        JSONServerCarClass.cars.append(person)       
          
-        print ('after add persons--->' , JSONServerClass.persons)
-        return JSONServerClass.persons
+        print ('after add persons--->' , JSONServerCarClass.persons)
+        return JSONServerCarClass.persons

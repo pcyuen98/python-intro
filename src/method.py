@@ -10,7 +10,7 @@ def sparePart():
     c = a-x-y
     return c+a
 
-def name():
+def brand():
     name = input("Enter name: ")
     return name
 
