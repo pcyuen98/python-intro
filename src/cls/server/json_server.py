@@ -44,7 +44,7 @@ class JsonSearchAddress(object):
         # JSONServerSearch.searchAddress(None)
         isPersonAddressExist = JSONServerSearch.searchAddress(user_input)
         
-        return False
+        return isPersonAddressExist
 
 def main():
     """
