@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="460" height="300" src="/pic/Python-Programming-Examples.png">
+</p>
+
 # python-intro
 # 27 Feb 2021
 
