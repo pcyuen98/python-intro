@@ -1,31 +1,39 @@
 from cls.cls_object.person import Person
-from cls.cls_object.car import Car
 from cls.server.json_server_method import JSONServerClass
 
 class JSONServerSearch:
     
     @staticmethod
-    def searchName(user_input):
-        print('searching for-->' , user_input.name)
+    def searchName(name):
+        print('searching for-->' , name)
         for person in JSONServerClass.getPerson():
-            personLocal = person()
+            personLocal = Person()
             personLocal.__dict__ = person
             print('personLocal name-->' , personLocal.name)
-            isMatch = personLocal.name == user_input.name
+            isMatch = personLocal.name == name
             print('isMatch ? -->' , isMatch)
             if isMatch:
                 return True
         return False
     
     @staticmethod
-    def searchAddress(user_input):
-        print('searching for-->' , user_input.address)
+    def searchAddress(address):
+        print('searching for-->' , address)
         for person in JSONServerClass.getPerson():
-            personLocal = person()
+            personLocal = Person()
             personLocal.__dict__ = person
             print('personLocal address-->' , personLocal.address)
-            isMatch = personLocal.address == user_input.address
+            isMatch = personLocal.address == address
             print('isMatch ? -->' , isMatch)
             if isMatch:
                 return True
         return False
+
+# Load the Memory for string value below
+# This is to skip the Server Process 
+
+# JSONServerClass.setPerson('{"name":"Kiruban","address":"Selangor"}')
+
+# print('\n')
+# address = 'Selangor1'
+# print(address , ' value Matching? --->' , JSONServerSearch.searchAddress(address))

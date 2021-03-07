@@ -41,7 +41,7 @@ class JsonSearch(object):
         import web 
         user_input = web.input()
 
-        isPersonNameExist = JSONServerSearch.searchName(user_input)
+        isPersonNameExist = JSONServerSearch.searchName(user_input.name)
         
         return isPersonNameExist
 
@@ -52,7 +52,7 @@ class JsonSearchAddress(object):
         # Exercise: Complete the method below 
         user_input = web.input()
         # JSONServerSearch.searchAddress(None)
-        isPersonAddressExist = JSONServerSearch.searchAddress(user_input)        
+        isPersonAddressExist = JSONServerSearch.searchAddress(user_input.address)        
         return isPersonAddressExist
 
 def main():
