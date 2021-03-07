@@ -1,5 +1,5 @@
 from cls.server.json_server_method import JSONServerClass
-from cls.cls_object.person import Person
+from cls.cls_object.person import Car
 
 class JSONServerSearchTest:
 
@@ -12,11 +12,11 @@ class JSONServerSearchTest:
         for person in JSONServerClass.getPerson():
             
             # Convert into Json Object First from Json String
-            personLocal = Person()
+            personLocal = Car()
             personLocal.__dict__ = person
             
             # Compare the input "Selangor" with data inside memory 
-            isMatch = personLocal.address == address
+            isMatch = personLocal.model == address
             
             if isMatch:
                 return True
