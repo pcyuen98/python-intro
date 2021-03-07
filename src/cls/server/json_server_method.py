@@ -1,5 +1,5 @@
 # more example - https://www.w3schools.com/python/python_classes.asp
-from cls.cls_object.person import Car
+from cls.cls_object.person import Person
 
 class JSONServerClass:
     
@@ -19,7 +19,7 @@ class JSONServerClass:
         print ('data received ====' , person)        
         
         # convert received person to local person Object
-        personLocal = Car()
+        personLocal = Person()
         personLocal.__dict__ = person
         #print ('received person--->' , person)
                     
