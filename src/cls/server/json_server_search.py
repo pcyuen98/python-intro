@@ -19,7 +19,7 @@ class JSONServerSearch:
     
     @staticmethod
     def searchAddress(user_input):
-        print('searching for-->' , user_input.model)
+        print('searching for-->' , user_input.address)
         for person in JSONServerClass.getPerson():
             personLocal = person()
             personLocal.__dict__ = person
