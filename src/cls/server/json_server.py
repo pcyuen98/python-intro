@@ -1,5 +1,6 @@
 from cls.server.json_server_method import JSONServerClass
 from cls.server.json_server_search import JSONServerSearch
+import json
 URLS = (
     '/json/get', 'JsonGet',
     '/json/post', 'JsonPost',
@@ -11,7 +12,10 @@ URLS = (
 class JsonGet(object):
 
     def GET(self):
-        return JSONServerClass.getPerson()
+        # need to convert to List Object to Json String else Angular cannot process it 
+        personInJsonString = json.dumps(JSONServerClass.getPerson())
+        print('return json-->' , personInJsonString )
+        return personInJsonString
 
 class JsonPost(object):
 
@@ -23,7 +27,13 @@ class JsonPost(object):
 
         json_data = web.data()
         
-        return JSONServerClass.setPerson(json_data)
+        JSONServerClass.setPerson(json_data)
+        
+        # need to convert to List Object to Json String else Angular cannot process it 
+        personInJsonString = json.dumps(JSONServerClass.getPerson())
+        print('return json-->' , personInJsonString )
+        
+        return personInJsonString
         
 class JsonSearch(object):
     
