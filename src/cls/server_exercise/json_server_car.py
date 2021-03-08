@@ -1,43 +1,32 @@
-from cls.server.json_server_method import JSONServerClass
-from cls.server.json_server_search import JSONServerSearch
+from cls.server_exercise.json_server_method_car import JSONServerCarClass
+from cls.server_exercise.json_server_search_car import JSONServerCarSearch
+import json
+
+
 URLS = (
     '/car/get', 'JsonGet',
     '/car/post', 'JsonPost',
     '/car/search', 'JsonSearch'
-    '/car/search/address', 'JsonSearchAddress'
+    '/car/search/brand', 'JsonSearchBrand'
+    '/car/search/model', 'JsonSearchModel'
 )
 
 
 class JsonGet(object):
 
     def GET(self):
-        return JSONServerClass.getPerson()
+        carInJsonString = json.dumps(JSONServerCarClass.getCar())
+        print('return json-->' , carInJsonString )
+        return carInJsonString
 
 class JsonPost(object):
 
     def POST(self):
         import web
+        print('post started')
         json_data = web.data()
         
-        return JSONServerClass.setPerson(json_data)
-
-class JsonSearch(object):
-    
-    def GET(self):
-        import web 
-        user_input = web.input()
-
-        isPersonNameExist = JSONServerSearch.searchName(user_input)
-        
-        return isPersonNameExist
-
-class JsonSearchAddress(object):
-    
-    def GET(self):
-        # Exercise: Complete the method below 
-        JSONServerSearch.searchAddress(None)
-        
-        return False
+        return JSONServerCarClass.setCar(json_data)
 
 class JsonSearchModel(object):
     
@@ -45,8 +34,8 @@ class JsonSearchModel(object):
         import web
         # Exercise: Complete the method below 
         user_input = web.input()
-        # JSONServerSearch.searchAddress(None)
-        isCarModelExist = JSONServerSearch.searchModel(user_input)
+        #JSONServerSearch.searchModel()(None)
+        isCarModelExist = JSONServerCarSearch.searchModel(user_input.model)
         
         return isCarModelExist
     
@@ -57,7 +46,7 @@ class JsonSearchBrand(object):
         # Exercise: Complete the method below 
         user_input = web.input()
         # JSONServerSearch.searchAddress(None)
-        isCarBrandExist = JSONServerSearch.searchBrand(user_input)
+        isCarBrandExist = JSONServerCarSearch.searchBrand(user_input.brand)
         
         return isCarBrandExist
 
