@@ -16,7 +16,7 @@ class JSONServerCarClass:
         
         import json
         car = json.loads(json_data)
-        print ('data received ====' , car)        
+        #print ('data received ====' , car)        
         
         # convert received person to local person Object
         carLocal = Car()

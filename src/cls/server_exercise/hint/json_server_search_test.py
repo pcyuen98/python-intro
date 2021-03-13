@@ -1,5 +1,5 @@
 from cls.server.json_server_method import JSONServerClass
-from cls.cls_object.person import Car
+from cls.cls_object.car import Car
 
 class JSONServerSearchTest:
 
