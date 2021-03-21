@@ -7,8 +7,8 @@ URLS = (
     '/car/get', 'JsonGet',
     '/car/post', 'JsonPost',
     '/car/search', 'JsonSearch'
-    '/car/search/brand', 'JsonSearchBrand'
-    '/car/search/model', 'JsonSearchModel'
+    
+    
 )
 
 
@@ -28,7 +28,7 @@ class JsonPost(object):
         
         return JSONServerCarClass.setCar(json_data)
 
-class JsonSearchModel(object):
+class JsonSearch(object):
     
     def GET(self):
         import web
@@ -39,16 +39,6 @@ class JsonSearchModel(object):
         
         return isCarModelExist
     
-class JsonSearchBrand(object):
-    
-    def GET(self):
-        import web
-        # Exercise: Complete the method below 
-        user_input = web.input()
-        # JSONServerSearch.searchAddress(None)
-        isCarBrandExist = JSONServerCarSearch.searchBrand(user_input.brand)
-        
-        return isCarBrandExist
 
        
         

@@ -1,7 +1,6 @@
 from cls.server.json_server_method import JSONServerClass
 from cls.cls_object.car import Car
 
-
 class JSONServerSearchTest:
 
     @staticmethod

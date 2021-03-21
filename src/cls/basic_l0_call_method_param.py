@@ -2,4 +2,8 @@ from cls.basic_method_class import MethodClass
 
 returnValue = MethodClass.sparePartStatic();
 
-print( MethodClass.noSelfWithParam( str(returnValue)) )
+convertToString = str(returnValue)
+
+print ('convertToString-->' + convertToString)
+
+print( MethodClass.noSelfWithParam(convertToString) )
