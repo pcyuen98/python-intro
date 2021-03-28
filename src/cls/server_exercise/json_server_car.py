@@ -6,11 +6,14 @@ import json
 URLS = (
     '/car/get', 'JsonGet',
     '/car/post', 'JsonPost',
-    '/car/search', 'JsonSearch'
-    
-    
+    '/car/search', 'JsonSearch'        
 )
 
+# URL Get - http://localhost:8080/car/get
+# URL Post - http://localhost:8080/car/post
+# URL Search - http://localhost:8080/car/search?model=kancil
+
+# Sample Json - {'brand': 'Produa', 'modal': 'kancil'}
 
 class JsonGet(object):
 
@@ -34,13 +37,9 @@ class JsonSearch(object):
         import web
         # Exercise: Complete the method below 
         user_input = web.input()
-        #JSONServerSearch.searchModel()(None)
         isCarModelExist = JSONServerCarSearch.searchModel(user_input.model)
         
         return isCarModelExist
-    
-
-       
         
 def main():
     """
