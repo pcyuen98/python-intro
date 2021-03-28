@@ -25,8 +25,12 @@ class JSONServerSearch:
 # Load the Memory for string value below
 # This is to skip the Server Process 
 
-# JSONServerClass.setPerson('{"name":"Kiruban","address":"Selangor"}')
+JSONServerClass.setPerson('{"name":"Kiruban","address":"Selangor"}')
 
-# print('\n')
-# address = 'Selangor1'
-# print(address , ' value Matching? --->' , JSONServerSearch.searchAddress(address))
+print('\n')
+name = 'Kiruban'
+print(name , ' name Matching? --->' , JSONServerSearch.searchName(name))
+
+print('\n')
+address = 'Selangor1'
+print(address , ' address Matching? --->' , JSONServerSearch.searchAddress(address))
