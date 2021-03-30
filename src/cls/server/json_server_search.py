@@ -6,19 +6,19 @@ class JSONServerSearch:
     @staticmethod
     def searchName(name):
         print('searching for-->' , name)
-        for person in JSONServerClass.getPerson():
-            personLocal = Person()
-            personLocal.__dict__ = person
-            print('personLocal name-->' , personLocal.name)
-            isMatch = personLocal.name == name
-            print('isMatch ? -->' , isMatch)
-            if isMatch:
+        for person in JSONServerClass.getPerson(): # For Loop, 1 record loop 1 time, 2 records loop 2 times
+            personLocal = Person() # new object creation
+            personLocal.__dict__ = person # convert to json
+            print('personLocal name-->' , personLocal.name) # printing person name 
+            isMatch = personLocal.name == name # is input == to the json object?  {'name': 'Kiruban', 'address': 'Selangor'}
+            print('isMatch ? -->' , isMatch) 
+            if isMatch:   # isMatch is true? 
                 return True
         return False
     
     @staticmethod
     def searchAddress(address):
-        print('searching for-->' , address)
+        print('searching for address-->' , address)
         # Complete this implementation here
         # the logic is similar to searchName method above. 
         # You may copy line 9 to 16 from above, paste here then modify it 
@@ -34,5 +34,5 @@ name = 'Kiruban'
 print(name , ' name Matching? --->' , JSONServerSearch.searchName(name))
 
 print('\n')
-address = 'Selangor1'
+address = 'Selangor'
 print(address , ' address Matching? --->' , JSONServerSearch.searchAddress(address))
