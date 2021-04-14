@@ -42,7 +42,7 @@ class JSONServerSearch:
             personLocal = Person() # new object creation
             personLocal.__dict__ = person # convert to json
             print ('\n') 
-            print ('personLocal postcode -->', personLocal.postcode)
+            print ('--Loop-- personLocal postcode -->', personLocal.postcode)
             
             isMatching = personLocal.postcode == postcode
             print ('isMatching --->' , isMatching)
@@ -58,10 +58,10 @@ JSONServerClass.setPerson('{"name":"Kiruban","address":"Selangor","postcode":"10
 
 JSONServerClass.setPerson('{"name":"jisoo","address":"seoul","postcode":"250"}')
 JSONServerClass.setPerson('{"name":"jennie","address":"karachi ","postcode":"1999"}')
-
+print('JSONServerClass--->' , JSONServerClass)
 print('\n')
 # address = 'mumbai'
 
-postcode = '10000'
+postcode = '1999'
 print(postcode , ' postcode exist? --->' , JSONServerSearch.searchPostCode(postcode))
 
