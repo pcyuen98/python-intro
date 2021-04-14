@@ -36,17 +36,15 @@ class JSONServerSearch:
         return False
     
     @staticmethod
-    def searchPostCode(address):
-        print('Input address-->' , address)
+    def searchPostCode(postcode):
+        print('Input postcode-->' , postcode)
         for person in JSONServerClass.getPerson():
             personLocal = Person() # new object creation
             personLocal.__dict__ = person # convert to json
             print ('\n') 
-            print ('personLocal address -->', personLocal.address)
-            #isBlackPrint = personLocal.name == 'BLACKPINK'
-            #print ('isBlackPrint --->' , isBlackPrint)
+            print ('personLocal postcode -->', personLocal.postcode)
             
-            isMatching = personLocal.address == address
+            isMatching = personLocal.postcode == postcode
             print ('isMatching --->' , isMatching)
             
             if (isMatching):
@@ -58,9 +56,12 @@ class JSONServerSearch:
 
 JSONServerClass.setPerson('{"name":"Kiruban","address":"Selangor","postcode":"10000" }')
 
-JSONServerClass.setPerson('{"name":"BLACKPINK","address":"mumbai","postcode":"250"}')
-JSONServerClass.setPerson('{"name":"MAMAMOO","address":"SEOUL","postcode":"1999"}')
+JSONServerClass.setPerson('{"name":"jisoo","address":"seoul","postcode":"250"}')
+JSONServerClass.setPerson('{"name":"jennie","address":"karachi ","postcode":"1999"}')
 
 print('\n')
-address = 'mumbai'
-print(address , ' address exist? --->' , JSONServerSearch.searchAddress(address))
+# address = 'mumbai'
+
+postcode = '10000'
+print(postcode , ' postcode exist? --->' , JSONServerSearch.searchPostCode(postcode))
+
