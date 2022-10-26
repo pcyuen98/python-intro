@@ -14,4 +14,4 @@ x = input("Enter your food choice here:")
 print ('Your selected food is ' + x + ' and the total price is RM')  
 
 
-# Quiz: If the drink is selectable, how do you calculate the total price?
+# Quiz: If the food and drink is selectable, how do you calculate the total price?

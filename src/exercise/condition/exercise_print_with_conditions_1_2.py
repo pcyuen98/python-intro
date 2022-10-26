@@ -1,4 +1,6 @@
-# Objective - To get used to basic IF condition and basic computing operation like comparison, very search function, etc.
+# Objective  
+# To get used to basic IF condition
+# Basic computing operation like comparison, very basic search function, etc.
 
 # What to do
 # ==========
