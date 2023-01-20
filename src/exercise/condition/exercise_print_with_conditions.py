@@ -1,5 +1,5 @@
 # This exercise to assign a_number variable a value
-# Objective - To get used to basic IF condition and basic computing operation like comparison, very search function, etc.
+# Objective - The basic command to print the input or output, troubleshooting, and essential in server processing
 
 # What to do
 # ==========
