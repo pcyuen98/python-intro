@@ -1,3 +1,27 @@
+# Objective  
+# Method or def usages 
+# How to make code cleaner from the sample
+
+# What to do
+# ==========
+# refer to the remarks below
+
+# -- Original dirty code -- 
+#def falsify(leftover):
+    #Note   ## Your code here (replace with a single line) ###
+     
+# def falsify(leftover):
+#    false = []
+#    for num in leftover:
+#        if 30 > num > 20:
+#            false.append(num - 10)
+#        elif num >= 30:
+#            false.append('1' + (str(num[1:])))
+#        else:
+#            false.append(num)
+#     return false
+ 
+
 leftover1 = [19.7, 20.0, 28.5, 30.0, 30.7]
 
 def process(leftover):
