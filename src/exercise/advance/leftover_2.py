@@ -1,4 +1,4 @@
-# Objective  
+# Example  
 # Advance condition usages
 # How to make multiple conditions into single statement or single line from leftover.py
 

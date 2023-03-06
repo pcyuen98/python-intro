@@ -1,4 +1,4 @@
-# Objective  
+# Example  
 # to use lambda expression to perform sorting
 
 # What to do

@@ -1,10 +1,6 @@
-# Objective  
+# Example  
 # Method or def usages 
 # How to make code cleaner from the sample
-
-# What to do
-# ==========
-# refer to the remarks below
 
 # -- Original dirty code -- 
 #def falsify(leftover):
@@ -46,5 +42,3 @@ def falsify(leftover):
     return process(leftover)
 
 print('result', falsify(leftover1))
-
-#print(falsify(leftover1))
