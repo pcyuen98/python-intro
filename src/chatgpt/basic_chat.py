@@ -4,7 +4,7 @@
 import openai
 
 def askQUes(ques):
-    openai.api_key = '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'
+    openai.api_key = 'refer to the tutorial link above'
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": ques }]
