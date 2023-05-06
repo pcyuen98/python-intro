@@ -3,7 +3,7 @@
 </p>
 
 # python-intro
-# 30 June 2022
+# 02 May 2023
 
 Installation Guide Here
 
