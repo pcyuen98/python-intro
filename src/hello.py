@@ -7,6 +7,6 @@
 
 # More samples - https://www.w3schools.com/python/
 
-print ("Hello, World! \n")
+print ("Thank You Pastor \n")
 
 
