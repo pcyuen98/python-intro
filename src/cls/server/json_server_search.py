@@ -1,6 +1,5 @@
 from cls.cls_object.person import Person
 from cls.server.json_server_method import JSONServerClass
-from pickle import TRUE
 
 class JSONServerSearch:
     

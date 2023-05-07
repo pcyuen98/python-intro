@@ -17,7 +17,7 @@ class MethodClass:
         x = 1
         y = 1
         a = x + y
-        return a;       
+        return a;
     
     def printHelloWorld(self):  
         return "hello World from class"

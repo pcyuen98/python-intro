@@ -18,3 +18,5 @@ jsonObj = json.loads(jsonStr)
 print('name--->' + jsonObj["name"] )
 print('address--->'  + jsonObj["address"] )
 
+print ('Full Name-->' , person.getSentense())
+
