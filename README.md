@@ -3,7 +3,8 @@
 </p>
 
 # python-intro
-# 30 June 2022
+# 02 May 2023 
+<a href="https://github.com/pcyuen98/python-intro/commits/main">last update</a> 
 
 Installation Guide Here
 
