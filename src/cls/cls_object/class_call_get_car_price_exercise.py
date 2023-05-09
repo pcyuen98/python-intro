@@ -4,7 +4,9 @@
 
 # What to do
 # ==========
-# create a function getPrice and return a price for the car
+# create a object function getPrice() and return a price for the car
+# create a static function getPrice(model) and return a price for the car
+
 # Honda City - SGD 20k
 # Honda Accord - SGD 30k
 # Toyota Vios- SGD 20k
@@ -17,3 +19,4 @@
 # print('model--->'  + jsonObj["model"] )
 
 # print ('Your car price is', car.getPrice())
+# print ('Your car price is', car.getPrice(car.model))
