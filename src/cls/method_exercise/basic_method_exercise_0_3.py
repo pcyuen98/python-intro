@@ -8,13 +8,14 @@
 
 
 # TODO refer to the https://github.com/pcyuen98/python-intro/blob/main/src/exercise/core/input/exercise_basic_input_1.py
-# create a function getTotal Price 
-
-# your previous exercise should able to display the total price as below
+# 1. Complete the static function getTotal Price 
+# 2. Create another py file as input file and this file function 
 
 def getTotalPrice():
 # Complete your code below    
     price = 0
     return price;
+
+# modify your previous exercise by adding a function below
     
 # print ('Your selected food is ' + x + ' and the total price is RM' , getTotalPrice(x)  
