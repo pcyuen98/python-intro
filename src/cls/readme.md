@@ -6,11 +6,11 @@ This module to practice the basic usages of a class, function and objects.
 2. Functions Make Testing and Debugging Easier
 3. Functions Let You Reuse Code
 
-# Structure (Function file) vs Object Oriented (Object File) Programming
+# Structured (Function file) vs Object Oriented (Object File) Programming
 <table>
   <tr>
     <th>Structure</th>
-    <th>Object Oriented</th>
+    <th>Object Oriented (Enhance ver of Structured Programming) </th>
   </tr>
   <tr>
     <td>Simple program of grouping or make the program more structured</td>
