@@ -11,7 +11,7 @@
 # 1. Complete the static function getTotal Price 
 # 2. Create another py file as input file and this file function 
 
-def getTotalPrice():
+def getTotalPrice(x):
 # Complete your code below    
     price = 0
     return price;
