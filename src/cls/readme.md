@@ -13,8 +13,8 @@ This module to practice the basic usages of a class, function and objects.
     <th>Object Oriented</th>
   </tr>
   <tr>
-    <td>Programs are divided into small programs or functions. </td>
-    <td>Programs are divided into objects or entities. </td>
+    <td>Simple program of grouping or make the program more structured</td>
+    <td>Grouping with objects or entities </td>
   </tr>
   <tr>
     <td>Normally appeared in static function and not instantiated </td>
