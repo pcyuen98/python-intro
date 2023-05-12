@@ -4,11 +4,13 @@
 
 # What to do
 # ==========
-# Use call_person.py as reference, initialize the car object then print the value below
-
+# Use call_person.py as reference, initialize the car object as Honda City 
+# then print the value below
 
 # car = Car()
 
+
+
 # YOU should able to print the car brand and model below
-# print('brand--->' + jsonObj["brand"] )
-# print('model--->'  + jsonObj["model"] )
+# print('brand--->' , car.brand )
+# print('model--->'  , car.model )
