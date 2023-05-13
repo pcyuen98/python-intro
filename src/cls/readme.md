@@ -4,7 +4,7 @@ This module to practice
 2. Focus in structured programming and static function usages
 3. Limited usages of Object Oriented Programming (OOP) to instantiation, data attributes and method class
 
-exlusion: Data abstraction, encapsulation, inheritance and polymorphism in intermediate module
+exclusion: Data abstraction, encapsulation, inheritance and polymorphism in intermediate module
 
 # Why function is important
 1. Functions Make task more structure and it's very basic programming concept
