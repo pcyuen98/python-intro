@@ -11,7 +11,7 @@ b) basic_input_functions.py - This file to handle the calculation of the total p
 
 <i>Snippet of the basic_input.py</i>
 ````
-print ('Your selected food is ' + x + ' and the total price is RM' , get_total_price(x) 
+print ('Your selected food is ' + get_food(x) + ' and the total price is RM' , get_total_price(x) 
 ````
 
 <i>Snippet of the basic_input_functions.py</i>
@@ -20,6 +20,10 @@ def get_total_price(x):
 # Complete your code here    
     price = 0;
     return price;
+
+def get_food(x):
+# Complete your code here    
+    return food;
 ````
     
 
