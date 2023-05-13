@@ -2,6 +2,8 @@
 1. Enhance the completed exercise from https://github.com/pcyuen98/python-intro/blob/main/src/core_basic/exercise/core/input/exercise_basic_input_1.py
 2. Able to understand the purpose of function requirement and enhancement
 
+Reference - https://github.com/pcyuen98/python-intro/blob/main/src/cls/readme.md
+
 # TODO
 Refer to the https://github.com/pcyuen98/python-intro/blob/main/src/core_basic/exercise/core/input/exercise_basic_input_1.py
 1. Complete the static function get_total_price Price 
