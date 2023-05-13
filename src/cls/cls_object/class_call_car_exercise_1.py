@@ -9,8 +9,6 @@
 
 # car = Car()
 
-
-
 # YOU should able to print the car brand and model below
 # print('brand--->' , car.brand )
 # print('model--->'  , car.model )
