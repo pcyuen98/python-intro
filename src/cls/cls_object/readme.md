@@ -5,7 +5,7 @@
 <b>Reference</b>
 https://github.com/pcyuen98/python-intro/blob/main/src/cls/readme.md
 
-# What is Object, Object Data and Class Method
+# What are Object, Object Data and Class Method
 <p align="center">
   <img width="760" height="500" src="/pic/object.png">
 </p>
