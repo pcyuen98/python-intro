@@ -16,14 +16,14 @@ print ('Your selected food is ' + BasicInputFunctions.get_food(x) + ' and the to
 
 <i>Snippet of the basic_input_functions.py</i>
 ````
-def get_total_price(x):
-# Complete your code here    
-    price = 0;
-    return price;
-
-def get_food(x):
-# Complete your code here    
-    return food;
+    def get_total_price(x):
+        # Complete your code here    
+        price = 0;
+        return price;
+    
+    def get_food(x):
+        # Complete your code here    
+        return 'something';
 ````
     
 
