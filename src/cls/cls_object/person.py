@@ -6,5 +6,5 @@ class Person:
 
     def get_sentense(self):
         print('self.name-->', self.name)
-        if self.name == 'My New Name':
+        if self.name == 'Andy':
             return 'He is Andy';     

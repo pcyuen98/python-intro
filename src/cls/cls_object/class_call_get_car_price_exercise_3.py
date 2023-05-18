@@ -14,9 +14,7 @@
 
 # car = Car()
 
-# YOU should able to print the car brand and model below
-# print('brand--->' + jsonObj["brand"] )
-# print('model--->'  + jsonObj["model"] )
+# YOU should able to print the car model and price below
 
 # print ('Your car price is', car.get_price())
 # print ('Your car price is', car.get_price(car.model))
