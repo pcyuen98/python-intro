@@ -1,7 +1,7 @@
 Run Web.py on eclipse
 Try http://localhost:8080 on browser
 
-#Objective of exercise
+# Objective of exercise
 1. To understand about basic HTTP client and server concept
 2. Simple Javascript
 3. Modify existing source code and return a string to front end
