@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+	var request;
+
+	function sendInfo() {
+
+		var url = "http://localhost:8080/";
+
+		request = new XMLHttpRequest();
+
+		try {
+			request.onreadystatechange = getInfo;
+			request.open("GET", url, true);
+			request.send();
+		}
+		catch (e) {
+			alert("Unable to connect to server");
+		}
+	}
+
+	function getInfo() {
+		if (request.readyState == 4) {
+			var val = request.responseText;
+			document.getElementById('output').innerHTML = val;
+		}
+	}
+</script>
+</head>
+
+<body>
+<marquee><h1>This is an example of ajax</h1></marquee>
+
+	<form id="formElem">
+		<input type="button" value="Submit To Backend" onClick="sendInfo()">
+	</form>
+	
+
+Your output is 
+<span id="output"> </span>
+</body>
+</html>

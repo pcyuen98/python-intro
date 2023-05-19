@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+	var request;
+
+	function sendInfo() {
+
+		var url = "http://localhost:8080?";
+
+		request = new XMLHttpRequest();
+
+        var form = document.querySelector("#formElem");
+		try {
+			request.onreadystatechange = getInfo;
+			selection = form.querySelector('input[name="selection"]').value,
+			url = url + "selection=" + selection;
+			request.open("GET", url, true);
+			request.send();
+		}
+		catch (e) {
+			alert("Unable to connect to server. " + e);
+		}
+	}
+
+	function getInfo() {
+		if (request.readyState == 4) {
+			var val = request.responseText;
+			document.getElementById('output').innerHTML = val;
+		}
+	}
+</script>
+</head>
+
+<body>
+<marquee><h1>This is an example of ajax</h1></marquee>
+
+<b>Enter your food choice here:</b>
+<p>
+Food 1. Mcdonald RM 10 <p>
+Food 2. Nasi Lemak RM 2 <p>
+Food 3. Mee Kosong RM 1 <p>
+
+	<form id="formElem">
+		<input type="text" name="selection" value="1"> <input
+		<input type="button" value="Submit To Backend" onClick="sendInfo()">
+	</form>
+	
+
+
+<span id="output"> </span>
+Your selected food is x and the total price is RM x
+</body>
+</html>

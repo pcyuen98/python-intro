@@ -1,5 +1,6 @@
 from cls.cls_object.person import Person
-from cls.server.json_server_method import JSONServerClass
+from client_server.server.json_server_method import JSONServerClass
+
 
 class JSONServerSearch:
     

@@ -1,0 +1,57 @@
+<html>
+<head>
+<script>
+	var request;
+
+	function sendInfo() {
+
+		async (e) => {
+      e.preventDefault();
+      var form = document.querySelector("#formElem");
+     // var form = document.forms[0];
+
+        data = {
+          firstname : form.querySelector('input[name="firstname"]').value,
+          lastname : form.querySelector('input[name="lastname"]').value,
+          age : 5
+        }
+
+        let json = JSON.stringify(data);
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:8080/json/"   , true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send(json);
+
+
+
+    };
+	
+	}
+
+	function getInfo() {
+	console.log('request.readyState-->' +  request.readyState)
+		if (request.readyState == 4 || request.status == 200) {
+			var val = request.responseText;
+			document.getElementById('output').innerHTML = val;
+		}
+	}
+</script>
+</head>
+
+<title>test</title>
+</head>
+
+<body>
+	<form id="formElem">
+		<input type="text" name="firstname" value="Karam"> <input
+			type="text" name="lastname" value="Yousef"> 
+			<input	type="submit" onClick="sendInfo()">
+	</form>
+
+	<span id="chiru"> </span>
+</body>
+
+Your output is 
+<span id="output"> </span>
+</body>
+</html>

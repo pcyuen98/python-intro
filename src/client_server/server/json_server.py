@@ -1,6 +1,6 @@
-from cls.server.json_server_method import JSONServerClass
-from cls.server.json_server_search import JSONServerSearch
 import json
+from client_server.server.json_server_method import JSONServerClass
+from client_server.server.json_server_search import JSONServerSearch
 URLS = (
     '/json/get', 'JsonGet',
     '/json/post', 'JsonPost',
