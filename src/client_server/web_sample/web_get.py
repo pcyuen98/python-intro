@@ -1,4 +1,5 @@
 import web
+from client_server.web_sample import getWebMethod
 
 urls = (
      '/', 'index1'    # the index1 is mapping to the class name below on line 4
@@ -8,7 +9,6 @@ urls = (
 class index1:
     def GET(self):
 
-        from web_sample import getWebMethod
         # return "hello Chrome 123!"        # return simple message
         user_input = web.input()
         
