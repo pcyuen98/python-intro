@@ -2,11 +2,11 @@ import web
 from client_server.web_sample import getWebMethod
 
 urls = (
-     '/', 'index1'    # the index1 is mapping to the class name below on line 4
+     '/', 'RootURL'    # the RootURL is mapping to the class name below on line 9
 
 )
 
-class index1:
+class RootURL:
     def GET(self):
 
         # return "hello Chrome 123!"        # return simple message

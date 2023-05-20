@@ -1,7 +1,7 @@
 # need pip install pypi-simple for the below
 
 import PySimpleGUI as sg
-from client import simpleGet
+from client_server.client import simpleGet
 
 layout = [[sg.Text("hello from PySimpleGUI")], [sg.Button("OK")]]
 

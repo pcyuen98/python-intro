@@ -1,6 +1,7 @@
-from cls.server_exercise.json_server_method_car import JSONServerCarClass
-from cls.server_exercise.json_server_search_car import JSONServerCarSearch
+
 import json
+from client_server.server_exercise.json_server_method_car import JSONServerCarClass
+from client_server.server_exercise.json_server_search_car import JSONServerCarSearch
 
 
 URLS = (
