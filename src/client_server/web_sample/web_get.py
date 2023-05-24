@@ -8,7 +8,8 @@ urls = (
 
 class RootURL:
     def GET(self):
-
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
         # return "hello Chrome 123!"        # return simple message
         user_input = web.input()
         

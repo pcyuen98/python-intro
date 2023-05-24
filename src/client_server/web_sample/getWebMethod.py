@@ -4,10 +4,9 @@ def printHelloWorld():
     print("hello World") 
 
 def sparePart():
-    x = 1
-    y = 1
-    z = 1
-    a = x + y + z
+    x = 100
+    y = 200
+    a = x + y
     return a
 
 # print ( printHelloWorld() ) 
