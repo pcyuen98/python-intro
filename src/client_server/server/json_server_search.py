@@ -20,19 +20,7 @@ class JSONServerSearch:
     @staticmethod
     def searchAddress(address):
         print('Input address-->' , address)
-        for person in JSONServerClass.getPerson():
-            personLocal = Person() # new object creation
-            personLocal.__dict__ = person # convert to json
-            print ('\n') 
-            print ('personLocal address -->', personLocal.address)
-            #isBlackPrint = personLocal.name == 'BLACKPINK'
-            #print ('isBlackPrint --->' , isBlackPrint)
-            
-            isMatching = personLocal.address == address
-            print ('isMatching --->' , isMatching)
-            
-            if (isMatching):
-                return True
+        # complete the code here
         return False
     
     @staticmethod

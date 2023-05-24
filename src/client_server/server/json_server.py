@@ -1,6 +1,7 @@
 import json
 from client_server.server.json_server_method import JSONServerClass
 from client_server.server.json_server_search import JSONServerSearch
+import web
 URLS = (
     '/json/get', 'JsonGet',
     '/json/post', 'JsonPost',
@@ -12,6 +13,8 @@ URLS = (
 class JsonGet(object):
 
     def GET(self):
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
         # need to convert to List Object to Json String else Angular cannot process it 
         personInJsonString = json.dumps(JSONServerClass.getPerson())
         print('return json-->' , personInJsonString )
@@ -21,8 +24,9 @@ class JsonPost(object):
 
     def POST(self):
         
-        import web
-
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
+        
         print('post started')
 
         json_data = web.data()
@@ -38,7 +42,8 @@ class JsonPost(object):
 class JsonSearch(object):
     
     def GET(self):
-        import web 
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
         user_input = web.input()
 
         isPersonNameExist = JSONServerSearch.searchName(user_input.name)
@@ -48,7 +53,8 @@ class JsonSearch(object):
 class JsonSearchAddress(object):
     
     def GET(self):
-        import web
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
         # Exercise: Complete the method below 
         user_input = web.input()
         # JSONServerSearch.searchAddress(None)
@@ -59,7 +65,6 @@ def main():
     """
     Main function starting app
     """
-    import web 
  
     http_app = web.application(URLS, globals())
     http_app.run()
