@@ -38,11 +38,11 @@ https://github.com/pcyuen98/python-intro/blob/main/src/cls/cls_object/car.py
 
 2. It should have 3 basic API function.
 
-&emsp &emsp a. Post an object
+&emsp; &emsp; a. Post an object
 
-&emsp &emsp b. Get all object in a list
+&emsp; &emsp; b. Get all object in a list
 
-&emsp &emsp c. search the brand name
+&emsp; &emsp; c. search the brand name
 
 Sample Json Object as below
 
