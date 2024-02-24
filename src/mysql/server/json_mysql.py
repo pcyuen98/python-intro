@@ -1,32 +1,30 @@
-# more example - https://www.w3schools.com/python/python_classes.asp
-from cls.cls_object.person import Person
-
-class JSONServerClass:
+from mysql.server.agent import Agent
+class JsonMySQL:
     
-    persons = [];
+    agent = [];
     
     @staticmethod
-    def getPerson():
+    def get_agent():
         
         #print ('returning persons--->' , JSONServerClass.persons) 
-        return JSONServerClass.persons
-            
+        return JsonMySQL.agent
+
     @staticmethod
     def setPerson(json_data):
         
         import json
-        person = json.loads(json_data)
-        print ('data received ====' , person)        
+        agent = json.loads(json_data)
+        print ('data received ====' , agent)        
         
         # convert received person to local person Object
-        personLocal = Person()
-        personLocal.__dict__ = person
+        local = Agent()
+        local.__dict__ = agent
         #print ('received person--->' , person)
                     
         #print ('personLocal Name--->' , personLocal.name)
         #print ('personLocal address--->' , personLocal.address)
         
-        JSONServerClass.persons.append(person)       
+        JsonMySQL.persons.append(agent)       
          
         #print ('after add persons--->' , JSONServerClass.persons)
-        return JSONServerClass.persons
+        return JsonMySQL.persons
