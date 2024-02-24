@@ -1,10 +1,13 @@
 
 import web
-from mysql.server.agent import Agent
-from mysql.server.address import Address
+
 import os
 import sys
+from mysql.server.agent import Agent
+from mysql.server.address import Address
 
+sys.path.append('../')
+sys.path.append('../../')
 
 URLS = (
     '/json/get', 'JsonGet'
@@ -38,12 +41,12 @@ def main():
     """
     Main function starting app
     """
+    print (sys.path)
+    
     get_agent()
     http_app = web.application(URLS, globals())
     http_app.run()
 
-    file_dir = os.path.dirname(__file__)
-    sys.path.append(file_dir)
 
 if __name__ == "__main__":
     main()
