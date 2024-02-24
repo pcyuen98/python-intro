@@ -19,6 +19,7 @@ class JsonGet(object):
     def GET(self):
         web.header('Access-Control-Allow-Origin',      '*')
         web.header('Access-Control-Allow-Credentials', 'true')
+        web.header('strict-origin-when-cross-origin', 'true')
         return get_agent()
 
 def get_agent():
