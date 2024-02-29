@@ -2,7 +2,6 @@
 import json
 import sys
 
-import jsonify
 import web
 
 from agent.server.address import Address
@@ -16,6 +15,7 @@ sys.path.append('../../')
 URLS = (
     '/json/get', 'JsonGet',
     '/json/post', 'JsonPost',
+    '/redirect', 'Redirect',
 )
 
 class JsonPost(object):
@@ -43,7 +43,15 @@ class JsonPost(object):
         print('OPTIONS starting' )
         
 
-        
+class Redirect(object):
+
+    def GET(self):
+        web.header('Access-Control-Allow-Origin',      '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
+        web.header('strict-origin-when-cross-origin', 'true')
+        user_input = web.input()
+        raise web.seeother('https://localhost:3000/agent/create/2')
+
         
 class JsonGet(object):
 
@@ -54,7 +62,7 @@ class JsonGet(object):
         user_input = web.input()
         return get_agent_db(user_input.id)
 
-
+    
 def get_agent():
         agent = Agent()
         agent.fullName = "Testing"
@@ -156,9 +164,18 @@ def main():
     """
     Main function starting app
     """
-    # get_agent_db(1)
     print (sys.path)
-    
+    from cheroot.server import HTTPServer
+    from cheroot.ssl.builtin import BuiltinSSLAdapter
+
+    ssl_cert = 'cert.crt'
+    ssl_key = 'key.key'
+
+    HTTPServer.ssl_adapter = BuiltinSSLAdapter(
+    certificate=ssl_cert,
+    private_key=ssl_key)
+
+
     get_agent()
     http_app = web.application(URLS, globals())
     http_app.run()
