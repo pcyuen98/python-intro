@@ -27,9 +27,8 @@ class DonatePost(object):
 
     def POST(self):
         
-        web.header('Access-Control-Allow-Origin',      '*')
-        web.header('Access-Control-Allow-Credentials', 'true')
-        
+        web.header('Access-Control-Allow-Origin','*')
+        web.header('Access-Control-Allow-Methods', 'content-type');
         print('CreatePost starting' )
 
         json_data = web.data()
@@ -46,7 +45,7 @@ class DonatePost(object):
         
         web.header('Access-Control-Allow-Origin',      '*')
         web.header('Access-Control-Allow-Credentials', 'true')
-        
+        web.header('Access-Control-Allow-Methods', 'content-type');
         print('OPTIONS starting' )
         
 class CreatePost(object):
