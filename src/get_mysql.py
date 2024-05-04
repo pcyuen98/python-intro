@@ -318,7 +318,7 @@ def main():
     ssl_cert = 'cert.crt'
     ssl_key = 'key.key'
 
-    #HTTPServer.ssl_adapter = BuiltinSSLAdapter(certificate=ssl_cert,private_key=ssl_key)
+    HTTPServer.ssl_adapter = BuiltinSSLAdapter(certificate=ssl_cert,private_key=ssl_key)
 
     #get_agent()
     #user = User()
