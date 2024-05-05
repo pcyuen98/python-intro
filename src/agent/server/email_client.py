@@ -9,7 +9,7 @@ class AgentEmail:
     def send_email(email_to, id, name):
         print ('Parameters email--> ', email_to, id, name)
 #msg = email.message_from_string('warning')
-        url = "https://eyebot.name.my:3000/agent/view/" + str(id) + "/";
+        url = "https://eyebot.name.my/agent/view/" + str(id) + "/";
         msg = MIMEMultipart("alternative")
         msg['From'] = "matabotmin@outlook.com"
         msg['To'] = email_to
