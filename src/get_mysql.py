@@ -67,12 +67,11 @@ class CreatePost(object):
         
         #return jsonString
     def OPTIONS(self):
-        
-        web.header('Access-Control-Allow-Origin',      '*')
-        web.header('Access-Control-Allow-Credentials', 'true')
-        
+
+        web.header('Access-Control-Allow-Origin','*')
+        web.header('Access-Control-Allow-Methods', 'content-type');
         print('OPTIONS starting' )
-        
+
 class JsonPost(object):
 
     def POST(self):
