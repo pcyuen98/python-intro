@@ -43,8 +43,7 @@ class DonatePost(object):
         #return jsonString
     def OPTIONS(self):
         
-        web.header('Access-Control-Allow-Origin',      '*')
-        web.header('Access-Control-Allow-Credentials', 'true')
+        web.header('Access-Control-Allow-Origin','*')
         web.header('Access-Control-Allow-Methods', 'content-type');
         print('OPTIONS starting' )
         
@@ -52,8 +51,8 @@ class CreatePost(object):
 
     def POST(self):
         
-        web.header('Access-Control-Allow-Origin',      '*')
-        web.header('Access-Control-Allow-Credentials', 'true')
+        web.header('Access-Control-Allow-Origin','*')
+        web.header('Access-Control-Allow-Methods', 'content-type');
         
         print('CreatePost starting' )
 
@@ -92,12 +91,9 @@ class JsonPost(object):
         
         #return jsonString
     def OPTIONS(self):
-        
-        web.header('Access-Control-Allow-Origin',      '*')
-        web.header('Access-Control-Allow-Credentials', 'true')
-        
+        web.header('Access-Control-Allow-Origin','*')
+        web.header('Access-Control-Allow-Methods', 'content-type');
         print('OPTIONS starting' )
-        
 
 class Redirect(object):
 
