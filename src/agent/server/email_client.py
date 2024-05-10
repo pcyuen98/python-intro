@@ -71,7 +71,7 @@ class AgentEmail:
     def register_email(email_to, id):
         print ('Parameters email--> ', email_to, id)
 #msg = email.message_from_string('warning')
-        url = "https://eyebot.name.my:3000/agent/update/" + str(id) + "/";
+        url = "https://eyebot.name.my/agent/update/" + str(id) + "/";
         msg = MIMEMultipart("alternative")
         msg['From'] = "matabotmin@outlook.com"
         msg['To'] = email_to
