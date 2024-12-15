@@ -18,7 +18,7 @@ def google_search(api_key, cse_id, query):
         return None
 
 def main():
-    api_key = 'AIzaSyBBBa5MIIZYXW7Ipbeespb1htgCl9Y_bOI'
+    api_key = google_api_key
     cse_id = "YOUR_CSE_ID"  # Replace with your Custom Search Engine ID
     query = input("Enter your search query: ")
     
