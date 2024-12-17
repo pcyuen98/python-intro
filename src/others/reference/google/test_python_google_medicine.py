@@ -3,6 +3,7 @@ import os
 import re
 from bin.others.reference.draw.test_check_image import ImageUrlValidator
 from bin.others.reference.draw.test_draw_image import ImageDownloader
+from others.reference.draw.test_download_image_chrome import ChromeImageDownloader
 
 google_api_key = os.environ.get('GOOGLE_API_KEY')
 
@@ -31,8 +32,8 @@ def clean_text(text):
     return cleaned_text + ".jpg"
 
 def main():
-    api_key = google_api_key
-    cse_id = "253aa2bad78c842d6"  # Replace with your Custom Search Engine ID
+    api_key = 'AIzaSyAzuH4xXqNC0Cs2D91nDU5L03DFJYFS0jE'
+    cse_id = "725a3b584d2264662"  # Replace with your Custom Search Engine ID
     query = input("Enter your search query: ")
 
     # Loop through 10 pages (1000 results)
@@ -49,8 +50,8 @@ def main():
                     title = item.get("title")
                     snippet = item.get("snippet")
                     src = item.get("pagemap", {}).get("cse_image", [{}])[0].get("src")
-                    if ImageUrlValidator.is_image_url(src):
-                        ImageDownloader.download_image(src, clean_text(title))
+                    #if ImageUrlValidator.is_image_url(src):
+                    ChromeImageDownloader.download_image(src, clean_text(title))
                     print('src-->', src)
             else:
                 print(f"Error fetching results for start position {start}.")
